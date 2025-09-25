@@ -1,7 +1,7 @@
 "use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarStyleMinimal from '@/components/navigation/NavbarStyleMinimal';
-import PlayfulHero from '@/components/sections/layouts/hero/BillboardHero';
+import BillboardHero from '@/components/sections/layouts/hero/BillboardHero';
 import BaseAbout from '@/components/sections/layouts/about/BaseAbout';
 import VerticalCardRoadmap from '@/components/sections/layouts/roadmap/VerticalCardRoadmap';
 import HowToBuy3D from '@/components/sections/layouts/howtobuy/3DHTB';
@@ -21,7 +21,7 @@ export default function Home() {
         />
       </div>
       <div id="hero" data-section="hero" className="scroll-mt-24">
-        <PlayfulHero title="Welcome to BrainRot Memecoin" subtitle="Join the fun and invest in your future!" />
+        <BillboardHero title="Welcome to BrainRot Memecoin" subtitle="Join the fun and invest in your future!" />
       </div>
       <div id="about" data-section="about" className="scroll-mt-24">
         <BaseAbout

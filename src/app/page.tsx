@@ -1,4 +1,4 @@
-use client
+"use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
 import NavbarLayoutFloatingOverlay from '@/components/navigation/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
 import TokenBillboardHero from '@/components/sections/layouts/hero/TokenBillboardHero';
@@ -11,7 +11,7 @@ import GradientFooter from '@/components/sections/layouts/footer/GradientFooter'
 
 export default function Home() {
   return (
-    <SiteThemeProvider theme={{ styleVariant: "brainRot", colorTemplate: 2, textAnimation: "flip" }}>
+    <SiteThemeProvider theme={{ styleVariant: "brain_rot", colorTemplate: 2, textAnimation: "flip" }}>
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingOverlay
           logoSrc="/images/logo.svg"

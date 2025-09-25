@@ -29,14 +29,14 @@ export const metadata: Metadata = {
       url: "/images/placeholderwide1.jpg",
       width: 1200,
       height: 630,
-      alt: "BrainRot Memecoin — bold, glitchy meme landing site"
+      alt: "BrainRot Memecoin — bold, glitchy meme landing site",
     }]
   },
   twitter: {
     card: "summary_large_image",
     title: "BrainRot Memecoin — bold, glitchy meme landing site",
     description: "BrainRot Memecoin is a bold, meme-ready landing that invites you to explore the token, learn the basics, and join a playful, fast-moving community.",
-    images: ["/images/placeholderwide1.jpg"]
+    images: ["/images/placeholderwide1.jpg"],
   },
   robots: { index: true, follow: true },
   icons: { icon: "/favicon.ico" },
@@ -47,9 +47,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${interTight.variable} ${playfairDisplay.variable} antialiased`}>
-        {children}
-      </body>
+      <body className={`${interTight.variable} ${playfairDisplay.variable} antialiased`}> {children} </body>
     </html>
   );
 }

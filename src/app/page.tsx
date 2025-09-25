@@ -14,8 +14,10 @@ export default function Home() {
       <div id="nav" data-section="nav">
         <NavbarStyleMinimal
           logoSrc="/images/logo.svg"
-          logoAlt="BrainRot Memecoin Logo"
+          logoWidth={100}
+          logoHeight={50}
           buttonText="Join the Community"
+          onButtonClick={() => {}}
         />
       </div>
       <div id="hero" data-section="hero" className="scroll-mt-24">
@@ -62,16 +64,12 @@ export default function Home() {
       </div>
       <div id="footer" data-section="footer" className="scroll-mt-24">
         <BaseFooter
-          logoSrc="/images/logo.svg"
-          logoWidth={100}
-          logoHeight={50}
           columns={[
             { title: "Community", items: [{ label: "Join Discord", onClick: () => {} }, { label: "Follow Twitter", onClick: () => {} }] },
             { title: "Resources", items: [{ label: "Whitepaper", onClick: () => {} }, { label: "FAQ", onClick: () => {} }] },
             { title: "Legal", items: [{ label: "Privacy Policy", onClick: () => {} }, { label: "Terms of Service", onClick: () => {} }] }
           ]}
           copyrightText="© 2023 BrainRot Memecoin. All rights reserved."
-          onPrivacyClick={() => {}}
         />
       </div>
     </SiteThemeProvider>

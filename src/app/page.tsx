@@ -30,7 +30,6 @@ export default function Home() {
             "BrainRot Memecoin is designed for meme lovers and anyone who appreciates playful and engaging cryptocurrency options.",
             "With a strong community focus, we welcome new members to join and shape the future of our token!"
           ]}
-          image="/images/logo.svg"
         />
       </div>
       <div id="roadmap" data-section="roadmap" className="scroll-mt-24">

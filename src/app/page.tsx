@@ -1,6 +1,6 @@
 "use client";
 import { SiteThemeProvider } from '@/components/sections/ThemeProvider';
-import NavbarLayoutFloatingOverlay from '@/components/navigation/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
+import NavbarLayoutFloatingOverlay from '@/components/navigation/NavbarLayoutFloatingOverlay';
 import TokenBillboardHero from '@/components/sections/layouts/hero/TokenBillboardHero';
 import SplitAbout from '@/components/sections/layouts/about/SplitAbout';
 import StackRoadmapTimeline from '@/components/sections/layouts/roadmap/StackRoadmapTimeline';
@@ -11,7 +11,7 @@ import GradientFooter from '@/components/sections/layouts/footer/GradientFooter'
 
 export default function Home() {
   return (
-    <SiteThemeProvider theme={{ styleVariant: "brain_rot", colorTemplate: 2, textAnimation: "flip" }}>
+    <SiteThemeProvider theme={{ styleVariant: "brainRot", colorTemplate: 2, textAnimation: "flip" }}>
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingOverlay
           logoSrc="/images/logo.svg"
@@ -26,7 +26,7 @@ export default function Home() {
             { name: "how-to-buy", id: "how-to-buy" },
             { name: "tokenomics", id: "tokenomics" },
             { name: "faq", id: "faq" },
-            { name: "footer", id: "footer" },
+            { name: "footer", id: "footer" }
           ]}
         />
       </div>
@@ -52,7 +52,7 @@ export default function Home() {
       <div id="roadmap" data-section="roadmap" className="scroll-mt-24">
         <StackRoadmapTimeline
           items={[
-            { stepNumber: "1", title: "Q1 2023", description: "Concept and community building", image: "", },
+            { stepNumber: "1", title: "Q1 2023", description: "Concept and community building", image: "" },
             { stepNumber: "2", title: "Q2 2023", description: "Token launch and marketing", image: "" },
             { stepNumber: "3", title: "Q3 2023", description: "Partnerships and exchanges", image: "" },
             { stepNumber: "4", title: "Q4 2023", description: "Community rewards and engagement", image: "" },

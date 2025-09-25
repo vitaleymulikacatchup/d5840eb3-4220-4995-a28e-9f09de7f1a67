@@ -44,9 +44,9 @@ export default function Home() {
       </div>
       <div id="how-to-buy" data-section="how-to-buy" className="scroll-mt-24">
         <HowToBuy3D steps={[
-          { position: "1", image: "/images/placeholder1.avif", title: "Create a Wallet", description: "Set up a digital wallet to store your coins.", isCenter: true },
-          { position: "2", image: "/images/placeholder2.avif", title: "Buy Tokens", description: "Purchase BrainRot tokens on the exchange.", isCenter: false },
-          { position: "3", image: "/images/placeholder3.avif", title: "Join the Community", description: "Engage with our community on social media platforms!", isCenter: true }
+          { position: "left", image: "/images/placeholder1.avif", title: "Create a Wallet", description: "Set up a digital wallet to store your coins.", isCenter: true },
+          { position: "center", image: "/images/placeholder2.avif", title: "Buy Tokens", description: "Purchase BrainRot tokens on the exchange.", isCenter: false },
+          { position: "right", image: "/images/placeholder3.avif", title: "Join the Community", description: "Engage with our community on social media platforms!", isCenter: true }
         ]} />
       </div>
       <div id="tokenomics" data-section="tokenomics" className="scroll-mt-24">

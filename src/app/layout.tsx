@@ -15,34 +15,28 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "BrainRot Memecoin — a chaotic, playful crypto landing",
+  title: "BrainRot Memecoin — bold, glitchy meme landing site",
   description: "BrainRot Memecoin is a bold, meme-ready landing that invites you to explore the token, learn the basics, and join a playful, fast-moving community.",
-  keywords: ["brainrot", "memecoin", "crypto", "meme-coin", "token", "buy steps", "roadmap", "tokenomics", "community"],
-  alternates: {
-    canonical: "/"
-  },
+  keywords: ["brainrot", "memecoin", "crypto", "meme-coin", "token", "community", "roadmap", "tokenomics"],
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "BrainRot Memecoin — a chaotic, playful crypto landing",
+    title: "BrainRot Memecoin — bold, glitchy meme landing site",
     description: "BrainRot Memecoin is a bold, meme-ready landing that invites you to explore the token, learn the basics, and join a playful, fast-moving community.",
     type: "website",
     url: "/",
     siteName: "BrainRot Coin",
-    images: [
-      {
-        url: "/images/logo.svg",
-        width: 1200,
-        height: 630,
-        alt: "BrainRot Memecoin"
-      }
-    ]
+    images: [{
+      url: "/images/placeholderwide1.jpg",
+      width: 1200,
+      height: 630,
+      alt: "BrainRot Memecoin — bold, glitchy meme landing site"
+    }]
   },
   twitter: {
     card: "summary_large_image",
-    title: "BrainRot Memecoin — a chaotic, playful crypto landing",
+    title: "BrainRot Memecoin — bold, glitchy meme landing site",
     description: "BrainRot Memecoin is a bold, meme-ready landing that invites you to explore the token, learn the basics, and join a playful, fast-moving community.",
-    images: [
-      "/images/logo.svg"
-    ]
+    images: ["/images/placeholderwide1.jpg"]
   },
   robots: { index: true, follow: true },
   icons: { icon: "/favicon.ico" },
@@ -50,10 +44,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{ children: React.ReactNode; }>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${interTight.variable} ${playfairDisplay.variable} antialiased`}>{children}</body>
+      <body className={`${interTight.variable} ${playfairDisplay.variable} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
